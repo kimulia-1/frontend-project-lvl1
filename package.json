@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/kimulia-1/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/kimulia-1/frontend-project-lvl1/actions)",
   "main": "index.js",
   "scripts": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kimulia-1/frontend-project-lvl1/issues"
   },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+},
   "homepage": "https://github.com/kimulia-1/frontend-project-lvl1#readme"
 }
