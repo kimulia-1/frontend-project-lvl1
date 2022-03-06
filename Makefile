@@ -6,3 +6,5 @@ publish:
 	npm publish --dry-run
 lib:
 	npm install readline-sync
+lint:
+	npx eslint .
