@@ -4,4 +4,4 @@
 
 Файл hexlet-check.yml отвечает за запуск этих тестов - не удаляйте этот файл, не редактируйте его и не переименовывайте репозиторий.
 
-<!-- ![develop](https://github.com/kimulia-1/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg) -->
+https://github.com/kimulia-1/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg
