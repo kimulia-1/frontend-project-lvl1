@@ -5,32 +5,23 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}`);
 
-const calcGame = () => {
-  console.log('What is the result of the expression?');
-
+const gcdGame = () => {
+  console.log('Find the greatest common divisor of given numbers.');
   let i = 0;
+
   while (i < 3) {
-    const operatorСhoice = () => {
-      const signs = ['+', '-', '*'];
-      const index = Math.floor(Math.random() * signs.length);
-      return signs[index];
-    };
-    const operator = operatorСhoice();
-    let result = '';
     const randomNumber1 = Math.round(Math.random() * 10);
     const randomNumber2 = Math.round(Math.random() * 10);
-    console.log(`Question: ${randomNumber1} ${operator} ${randomNumber2} `);
-    if (operator === '+') {
-      result = randomNumber1 + randomNumber2;
-    }
-    if (operator === '-') {
-      result = randomNumber1 - randomNumber2;
-    }
-    if (operator === '*') {
-      result = randomNumber1 * randomNumber2;
-    }
-
+    console.log(`Question: ${randomNumber1} ${randomNumber2}`);
     const userAnswer = readlineSync.question('Your answer: ');
+
+    const gcd = (num1, num2) => {
+      if (!num2) {
+        return num1;
+      }
+      return gcd(num2, num1 % num2);
+    };
+    const result = gcd(randomNumber1, randomNumber2);
 
     if (Number(result) === Number(userAnswer)) {
       i += 1;
@@ -42,4 +33,4 @@ const calcGame = () => {
   }
   return console.log(`Congratulations, ${userName}!`);
 };
-calcGame();
+gcdGame();

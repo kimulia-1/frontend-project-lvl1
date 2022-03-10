@@ -10,3 +10,5 @@
 https://asciinema.org/a/cwGwZuPAZAhR7i8wRqYCcXLca
 //brain-calc
 https://asciinema.org/a/EoklNKhfcI063E75nQSbejOtW
+//brain-gcd
+https://asciinema.org/a/DMucYKiyNanUxIyfRiQAvSd8b
