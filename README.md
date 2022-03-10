@@ -6,4 +6,7 @@
 
 ![example workflow](https://github.com/kimulia-1/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
+//brain-even
 https://asciinema.org/a/cwGwZuPAZAhR7i8wRqYCcXLca
+//brain-calc
+https://asciinema.org/a/EoklNKhfcI063E75nQSbejOtW
