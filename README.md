@@ -7,8 +7,10 @@
 ![example workflow](https://github.com/kimulia-1/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
 //brain-even
-https://asciinema.org/a/cwGwZuPAZAhR7i8wRqYCcXLca
+https://asciinema.org/a/479867
 //brain-calc
-https://asciinema.org/a/EoklNKhfcI063E75nQSbejOtW
+https://asciinema.org/a/479864
 //brain-gcd
-https://asciinema.org/a/DMucYKiyNanUxIyfRiQAvSd8b
+https://asciinema.org/a/479871
+//brain-progression
+https://asciinema.org/a/479861
