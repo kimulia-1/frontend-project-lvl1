@@ -6,13 +6,20 @@
 
 ![example workflow](https://github.com/kimulia-1/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
-//brain-even
+//здесь представлены аскинемы игры.
+// Первая проверка - положительная, вторая проверка отрицательная, третья проверка на корректный ввод
+
+//аскинема игры brain-even
 https://asciinema.org/a/479867
-//brain-calc
+
+//аскинема игры brain-calc
 https://asciinema.org/a/479864
-//brain-gcd
+
+//аскинема игры brain-gcd
 https://asciinema.org/a/479871
-//brain-progression
+
+//аскинема игры brain-progression
 https://asciinema.org/a/479861
-//brain-prime
+
+//аскинема игры brain-prime
 https://asciinema.org/a/480190
