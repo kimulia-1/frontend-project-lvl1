@@ -8,3 +8,5 @@ lib:
 	npm install readline-sync
 lint:
 	npx eslint .
+
+start: install publish lib lint
