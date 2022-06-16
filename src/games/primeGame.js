@@ -1,5 +1,5 @@
 export const primeGame = () => {
-  let result = '';
+  let result = 'yes';
   const num = Math.floor(Math.random() * 10) + 1;
   console.log(`Question: ${num}`);
   if (num === 1) {
@@ -10,7 +10,6 @@ export const primeGame = () => {
       result = 'no';
       break;
     }
-    result = 'yes';
   }
   return result;
 };
