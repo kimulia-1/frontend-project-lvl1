@@ -1,7 +1,10 @@
-export const gcdGame = () => {
-  const randomNumber1 = Math.round(Math.random() * 10);
-  const randomNumber2 = Math.round(Math.random() * 10);
-  console.log(`Question: ${randomNumber1} ${randomNumber2}`);
+import { creatorDataGame, randomNum } from '../helpers.js';
+
+const gcdGame = () => {
+  const rule = 'Find the greatest common divisor of given numbers.';
+  const randomNum1 = randomNum();
+  const randomNum2 = randomNum();
+  const query = `Question: ${randomNum1} ${randomNum2}`;
 
   const gcd = (num1, num2) => {
     if (!num2) {
@@ -9,8 +12,9 @@ export const gcdGame = () => {
     }
     return gcd(num2, num1 % num2);
   };
-  const result = gcd(randomNumber1, randomNumber2);
-  return result.toString();
+  const result = gcd(randomNum1, randomNum2);
+  const dataGame = creatorDataGame(result, query, rule);
+  return dataGame;
 };
 
-export const ruleGame = 'Find the greatest common divisor of given numbers.';
+export default gcdGame;

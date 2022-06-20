@@ -1,14 +1,13 @@
-export const calcGame = () => {
-  const operatorСhoice = () => {
-    const signs = ['+', '-', '*'];
-    const index = Math.floor(Math.random() * signs.length);
-    return signs[index];
-  };
-  const operator = operatorСhoice();
+import { creatorDataGame, randomNum } from '../helpers.js';
+
+const calcGame = () => {
+  const rule = 'What is the result of the expression?';
   let result = '';
-  const randomNumber1 = Math.round(Math.random() * 10);
-  const randomNumber2 = Math.round(Math.random() * 10);
-  console.log(`Question: ${randomNumber1} ${operator} ${randomNumber2} `);
+  const signs = ['+', '-', '*'];
+  const operator = signs[randomNum(signs.length - 1)];
+  const randomNumber1 = randomNum();
+  const randomNumber2 = randomNum();
+  const query = `Question: ${randomNumber1} ${operator} ${randomNumber2} `;
   if (operator === '+') {
     result = randomNumber1 + randomNumber2;
   }
@@ -18,7 +17,8 @@ export const calcGame = () => {
   if (operator === '*') {
     result = randomNumber1 * randomNumber2;
   }
-  return result.toString();
+  const dataGame = creatorDataGame(result, query, rule);
+  return dataGame;
 };
 
-export const ruleGame = 'What is the result of the expression?';
+export default calcGame;

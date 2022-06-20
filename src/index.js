@@ -1,18 +1,18 @@
 import readlineSync from 'readline-sync';
 
-const engine = (game, ruleGame) => {
+const engine = (game) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
-  console.log(ruleGame);
+  const { rule } = game();
+  console.log(rule);
 
-  let i = 0;
   let a = '';
-  while (i < 3) {
-    const result = game();
+  for (let i = 0; i < 3; i += 1) {
+    const { query, result } = game();
+    console.log(query);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === result) {
-      i += 1;
       console.log('Correct!');
     }
     if (userAnswer !== result) {
@@ -20,7 +20,7 @@ const engine = (game, ruleGame) => {
 Let's try again, ${userName}!`);
       return a;
     }
-    if (i === 3) {
+    if (i === 2) {
       a = console.log(`Congratulations, ${userName}!`);
     }
   }
