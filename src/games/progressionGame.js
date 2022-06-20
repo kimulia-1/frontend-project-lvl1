@@ -1,17 +1,21 @@
-export const progressionGame = () => {
-  const firstNum = Math.floor(Math.random() * 10) + 1;
-  const randomSubsequence = Math.floor(Math.random() * 10) + 1;
+import { creatorDataGame, randomNum } from '../helpers.js';
+
+const progressionGame = () => {
+  const rule = 'What number is missing in the progression?';
+  const randomNum1 = randomNum();
+  const randomNum2 = randomNum();
   const array = [];
-  array.push(firstNum);
+  array.push(randomNum1);
   for (let index = 0; index < 10; index += 1) {
-    const numbers = array[index] + randomSubsequence;
+    const numbers = array[index] + randomNum2;
     array.push(numbers);
   }
-  const secretIndex = Math.floor(Math.random() * 10) + 1;
+  const secretIndex = randomNum();
   const result = array[secretIndex];
   array[secretIndex] = '..';
-  console.log(`Question: ${array.join(' ')}`);
-  return result.toString();
+  const query = `Question: ${array.join(' ')}`;
+  const dataGame = creatorDataGame(result, query, rule);
+  return dataGame;
 };
 
-export const ruleGame = 'What number is missing in the progression?';
+export default progressionGame;

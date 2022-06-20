@@ -1,17 +1,21 @@
-export const primeGame = () => {
+import { creatorDataGame, randomNum } from '../helpers.js';
+
+const primeGame = () => {
+  const rule = 'Answer "yes" if given random number is prime. Otherwise answer "no".';
   let result = 'yes';
-  const num = Math.floor(Math.random() * 10) + 1;
-  console.log(`Question: ${num}`);
-  if (num === 1) {
+  const randomNum1 = randomNum();
+  const query = `Question: ${randomNum1}`;
+  if (randomNum1 === 1) {
     result = 'no';
   }
-  for (let div = 2; div < num; div += 1) {
-    if (num % div === 0) {
+  for (let div = 2; div < randomNum1; div += 1) {
+    if (randomNum1 % div === 0) {
       result = 'no';
       break;
     }
   }
-  return result;
+  const dataGame = creatorDataGame(result, query, rule);
+  return dataGame;
 };
 
-export const ruleGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export default primeGame;

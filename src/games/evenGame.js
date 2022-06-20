@@ -1,14 +1,18 @@
-export const evenGame = () => {
-  const randomNumber = Math.round(Math.random() * 100);
-  console.log(`Question: ${randomNumber}`);
+import { randomNum, creatorDataGame } from '../helpers.js';
+
+const evenGame = () => {
+  const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
   let result = '';
-  if (randomNumber % 2 === 0) {
+  const randomNum1 = randomNum(100);
+  const query = `Question: ${randomNum1}`;
+  if (randomNum1 % 2 === 0) {
     result = 'yes';
   }
-  if (randomNumber % 2 !== 0) {
+  if (randomNum1 % 2 !== 0) {
     result = 'no';
   }
-  return result;
+  const dataGame = creatorDataGame(result, query, rule);
+  return dataGame;
 };
 
-export const ruleGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+export default evenGame;
