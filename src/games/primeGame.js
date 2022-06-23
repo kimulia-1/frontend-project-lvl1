@@ -1,10 +1,11 @@
-import { creatorDataGame, randomNum } from '../helpers.js';
+import { collectDataGame, randomNum } from '../helpers.js';
 
-const primeGame = () => {
-  const rule = 'Answer "yes" if given random number is prime. Otherwise answer "no".';
+export const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+export const primeGame = () => {
   let result = 'yes';
   const randomNum1 = randomNum();
-  const query = `Question: ${randomNum1}`;
+  const question = `Question: ${randomNum1}`;
   if (randomNum1 === 1) {
     result = 'no';
   }
@@ -14,8 +15,5 @@ const primeGame = () => {
       break;
     }
   }
-  const dataGame = creatorDataGame(result, query, rule);
-  return dataGame;
+  return collectDataGame(result, question);
 };
-
-export default primeGame;

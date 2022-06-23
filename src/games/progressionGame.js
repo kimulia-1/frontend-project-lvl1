@@ -1,7 +1,8 @@
-import { creatorDataGame, randomNum } from '../helpers.js';
+import { collectDataGame, randomNum } from '../helpers.js';
 
-const progressionGame = () => {
-  const rule = 'What number is missing in the progression?';
+export const description = 'What number is missing in the progression?';
+
+export const progressionGame = () => {
   const randomNum1 = randomNum();
   const randomNum2 = randomNum();
   const array = [];
@@ -13,9 +14,6 @@ const progressionGame = () => {
   const secretIndex = randomNum();
   const result = array[secretIndex];
   array[secretIndex] = '..';
-  const query = `Question: ${array.join(' ')}`;
-  const dataGame = creatorDataGame(result, query, rule);
-  return dataGame;
+  const question = `Question: ${array.join(' ')}`;
+  return collectDataGame(result, question);
 };
-
-export default progressionGame;

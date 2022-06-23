@@ -1,8 +1,7 @@
 export const randomNum = (num = 10) => Math.round(Math.random() * num);
-export const creatorDataGame = (result, query, rule) => {
+export const collectDataGame = (result, question) => {
   const dataGame = {};
   dataGame.result = result.toString();
-  dataGame.query = query;
-  dataGame.rule = rule;
+  dataGame.question = question;
   return dataGame;
 };

@@ -1,10 +1,11 @@
-import { creatorDataGame, randomNum } from '../helpers.js';
+import { collectDataGame, randomNum } from '../helpers.js';
 
-const gcdGame = () => {
-  const rule = 'Find the greatest common divisor of given numbers.';
+export const description = 'Find the greatest common divisor of given numbers.';
+
+export const gcdGame = () => {
   const randomNum1 = randomNum();
   const randomNum2 = randomNum();
-  const query = `Question: ${randomNum1} ${randomNum2}`;
+  const question = `Question: ${randomNum1} ${randomNum2}`;
 
   const gcd = (num1, num2) => {
     if (!num2) {
@@ -13,8 +14,5 @@ const gcdGame = () => {
     return gcd(num2, num1 % num2);
   };
   const result = gcd(randomNum1, randomNum2);
-  const dataGame = creatorDataGame(result, query, rule);
-  return dataGame;
+  return collectDataGame(result, question);
 };
-
-export default gcdGame;
