@@ -1,18 +1,16 @@
-import { randomNum, creatorDataGame } from '../helpers.js';
+import { randomNum, collectDataGame } from '../helpers.js';
 
-const evenGame = () => {
-  const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+export const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+export const evenGame = () => {
   let result = '';
   const randomNum1 = randomNum(100);
-  const query = `Question: ${randomNum1}`;
+  const question = `Question: ${randomNum1}`;
   if (randomNum1 % 2 === 0) {
     result = 'yes';
   }
   if (randomNum1 % 2 !== 0) {
     result = 'no';
   }
-  const dataGame = creatorDataGame(result, query, rule);
-  return dataGame;
+  return collectDataGame(result, question);
 };
-
-export default evenGame;
