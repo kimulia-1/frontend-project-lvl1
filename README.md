@@ -32,7 +32,7 @@ Run the command:
 
 `$ make install`
 
-### Launch games.
+### Launch games
 
 The first check is positive, the second check is negative, the third check is for correct input.
 
