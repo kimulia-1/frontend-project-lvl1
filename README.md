@@ -56,7 +56,7 @@ The first check is positive, the second check is negative, the third check is fo
 
 `$ brain-gcd`
 
-[![asciicast](https://asciinema.org/a/479871.svg)](https://asciinema.org/a/479871)
+[![asciicast](https://asciinema.org/a/504960.svg)](https://asciinema.org/a/504960)
 
 ---
 
