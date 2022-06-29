@@ -10,7 +10,7 @@
 
 Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
 
-_Games:_
+**Games:**
 
 1. brain-calc - Arithmetic expressions to be evaluated.
 2. brain-even - Definition of an even number.
@@ -36,37 +36,42 @@ Run the command:
 
 The first check is positive, the second check is negative, the third check is for correct input.
 
-_is calculate:_
+**Is calculate:**
 
 ---
 
 `$ brain-calc`
+
 [![asciicast](https://asciinema.org/a/479864.svg)](https://asciinema.org/a/479864)
 
-_is even:_
+**Is even:**
 
 ---
 
 `$ brain-even`
+
 [![asciicast](https://asciinema.org/a/479867.svg)](https://asciinema.org/a/479867)
 
-_is gcd:_
+**Is gcd:**
 
 ---
 
 `$ brain-gcd`
+
 [![asciicast](https://asciinema.org/a/479871.svg)](https://asciinema.org/a/479871)
 
-_is prime:_
+**Is prime:**
 
 ---
 
 `$ brain-prime`
+
 [![asciicast](https://asciinema.org/a/480190.svg)](https://asciinema.org/a/480190)
 
-_is progression:_
+**Is progression:**
 
 ---
 
 `$ brain-progression`
+
 [![asciicast](https://asciinema.org/a/479861.svg)](https://asciinema.org/a/479861)
