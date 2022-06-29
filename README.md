@@ -6,20 +6,53 @@
 
 ![example workflow](https://github.com/kimulia-1/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
-//здесь представлены аскинемы игры.
-// Первая проверка - положительная, вторая проверка отрицательная, третья проверка на корректный ввод
+"Mind Games" is a set of five console games.
+Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
 
-//аскинема игры brain-even
+Games:
+
+1. brain-calc - Arithmetic expressions to be evaluated.
+2. brain-even - Definition of an even number.
+3. brain-gcd - Finding the Greatest Common Divisor.
+4. brain-prime - Definition of a prime number.
+5. brain-progression - Search for missing numbers in a sequence of numbers.
+
+System minimum requirements:
+
+- Node.js version - 13
+
+### Installation:
+
+Clone this repository:
+`$ git clone https://github.com/kimulia-1/frontend-project-lvl1.git`
+Run the command:
+`$ make install`
+
+### Here are the askinems of the game.
+
+The first check is positive, the second check is negative, the third check is for correct input.
+
+### start the game is calculete:
+
+`$ brain-calc`
+![brain-calc](https://asciinema.org/a/479864)
+
+### start the game is even:
+
+`$ brain-even`
 https://asciinema.org/a/479867
 
-//аскинема игры brain-calc
-https://asciinema.org/a/479864
+### start the game is gcd:
 
-//аскинема игры brain-gcd
-https://asciinema.org/a/479871
+`$ brain-gcd`
+![brain-gcd](https://asciinema.org/a/479871)
 
-//аскинема игры brain-progression
-https://asciinema.org/a/479861
+### start the game is prime:
 
-//аскинема игры brain-prime
-https://asciinema.org/a/480190
+`$ brain-prime`
+![brain-prime](https://asciinema.org/a/480190)
+
+### start the game is progression:
+
+`$ brain-progression`
+![brain-progression](https://asciinema.org/a/479861)
