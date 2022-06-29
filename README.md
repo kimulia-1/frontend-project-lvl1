@@ -38,39 +38,37 @@ The first check is positive, the second check is negative, the third check is fo
 
 **Is calculate:**
 
----
-
 `$ brain-calc`
 
 [![asciicast](https://asciinema.org/a/479864.svg)](https://asciinema.org/a/479864)
 
-**Is even:**
-
 ---
+
+**Is even:**
 
 `$ brain-even`
 
 [![asciicast](https://asciinema.org/a/479867.svg)](https://asciinema.org/a/479867)
 
-**Is gcd:**
-
 ---
+
+**Is gcd:**
 
 `$ brain-gcd`
 
 [![asciicast](https://asciinema.org/a/479871.svg)](https://asciinema.org/a/479871)
 
-**Is prime:**
-
 ---
+
+**Is prime:**
 
 `$ brain-prime`
 
 [![asciicast](https://asciinema.org/a/480190.svg)](https://asciinema.org/a/480190)
 
-**Is progression:**
-
 ---
+
+**Is progression:**
 
 `$ brain-progression`
 
