@@ -6,10 +6,11 @@
 
 ![example workflow](https://github.com/kimulia-1/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
-"Mind Games" is a set of five console games.
+### "Mind Games" is a set of five console games.
+
 Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
 
-Games:
+_Games:_
 
 1. brain-calc - Arithmetic expressions to be evaluated.
 2. brain-even - Definition of an even number.
@@ -17,42 +18,55 @@ Games:
 4. brain-prime - Definition of a prime number.
 5. brain-progression - Search for missing numbers in a sequence of numbers.
 
-System minimum requirements:
+### System minimum requirements:
 
 - Node.js version - 13
 
 ### Installation:
 
 Clone this repository:
+
 `$ git clone https://github.com/kimulia-1/frontend-project-lvl1.git`
+
 Run the command:
+
 `$ make install`
 
-### Here are the askinems of the game.
+### Launch games.
 
 The first check is positive, the second check is negative, the third check is for correct input.
 
-### start the game is calculete:
+_is calculate:_
+
+---
 
 `$ brain-calc`
-![brain-calc](https://asciinema.org/a/479864)
+[![asciicast](https://asciinema.org/a/479864.svg)](https://asciinema.org/a/479864)
 
-### start the game is even:
+_is even:_
+
+---
 
 `$ brain-even`
-https://asciinema.org/a/479867
+[![asciicast](https://asciinema.org/a/479867.svg)](https://asciinema.org/a/479867)
 
-### start the game is gcd:
+_is gcd:_
+
+---
 
 `$ brain-gcd`
-![brain-gcd](https://asciinema.org/a/479871)
+[![asciicast](https://asciinema.org/a/479871.svg)](https://asciinema.org/a/479871)
 
-### start the game is prime:
+_is prime:_
+
+---
 
 `$ brain-prime`
-![brain-prime](https://asciinema.org/a/480190)
+[![asciicast](https://asciinema.org/a/480190.svg)](https://asciinema.org/a/480190)
 
-### start the game is progression:
+_is progression:_
+
+---
 
 `$ brain-progression`
-![brain-progression](https://asciinema.org/a/479861)
+[![asciicast](https://asciinema.org/a/479861.svg)](https://asciinema.org/a/479861)
