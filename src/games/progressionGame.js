@@ -21,7 +21,7 @@ const game = () => {
   const secretIndex = randomNum();
   const result = array[secretIndex].toString();
   array[secretIndex] = '..';
-  const question = `Question: ${array.join(' ')}`;
+  const question = `${array.join(' ')}`;
 
   return { result, question, description };
 };

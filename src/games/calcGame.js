@@ -24,7 +24,7 @@ const game = () => {
   const randomNumber1 = randomNum();
   const randomNumber2 = randomNum();
 
-  const question = `Question: ${randomNumber1} ${operator} ${randomNumber2} `;
+  const question = `${randomNumber1} ${operator} ${randomNumber2}`;
   const result = getCalc(randomNumber1, randomNumber2, operator);
 
   return { result, question, description };
