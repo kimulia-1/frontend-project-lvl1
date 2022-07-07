@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/kimulia-1/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/kimulia-1/frontend-project-lvl1/actions)
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/371c87bd20c3fc66148c/maintainability)](https://codeclimate.com/github/kimulia-1/frontend-project-lvl1/maintainability)
 
 ![example workflow](https://github.com/kimulia-1/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 

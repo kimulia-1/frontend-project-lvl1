@@ -10,12 +10,12 @@ const engine = (game) => {
   console.log(description);
 
   for (let i = 0; i < numOfRounds; i += 1) {
-    const { question, result } = game();
+    const { question, answer } = game();
     console.log(`Question: ${question} `);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer !== result) {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${result}' 
+    if (userAnswer !== answer) {
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}' 
 Let's try again, ${userName}!`);
     }
     console.log('Correct!');

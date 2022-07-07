@@ -1,31 +1,31 @@
-import randomNum from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 import engine from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
 const getProgression = (num1, num2) => {
-  const array = [];
-  array.push(num1);
+  const progression = [];
+  progression.push(num1);
   for (let index = 0; index < 10; index += 1) {
-    const numbers = array[index] + num2;
-    array.push(numbers);
+    const numbers = progression[index] + num2;
+    progression.push(numbers);
   }
-  return array;
+  return progression;
 };
 
-const game = () => {
-  const randomNum1 = randomNum();
-  const randomNum2 = randomNum();
+const generateRound = () => {
+  const randomNum1 = getRandomNumber();
+  const randomNum2 = getRandomNumber();
 
-  const array = getProgression(randomNum1, randomNum2);
-  const secretIndex = randomNum();
-  const result = array[secretIndex].toString();
-  array[secretIndex] = '..';
-  const question = `${array.join(' ')}`;
+  const progression = getProgression(randomNum1, randomNum2);
+  const secretIndex = getRandomNumber();
+  const answer = progression[secretIndex].toString();
+  progression[secretIndex] = '..';
+  const question = `${progression.join(' ')}`;
 
-  return { result, question, description };
+  return { answer, question, description };
 };
 
-const progressionGame = () => engine(game);
+const runProgressionGame = () => engine(generateRound);
 
-export default progressionGame;
+export default runProgressionGame;
