@@ -1,4 +1,4 @@
-import randomNum from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 import engine from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -10,15 +10,15 @@ const getGcd = (num1, num2) => {
   return getGcd(num2, num1 % num2);
 };
 
-const game = () => {
-  const randomNum1 = randomNum();
-  const randomNum2 = randomNum();
+const generateRound = () => {
+  const randomNum1 = getRandomNumber();
+  const randomNum2 = getRandomNumber();
   const question = `${randomNum1} ${randomNum2}`;
 
-  const result = getGcd(randomNum1, randomNum2).toString();
-  return { result, question, description };
+  const answer = getGcd(randomNum1, randomNum2).toString();
+  return { answer, question, description };
 };
 
-const gcdGame = () => engine(game);
+const runGcdGame = () => engine(generateRound);
 
-export default gcdGame;
+export default runGcdGame;

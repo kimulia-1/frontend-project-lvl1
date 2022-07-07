@@ -1,4 +1,4 @@
-import randomNum from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 import engine from '../index.js';
 
 const description = 'What is the result of the expression?';
@@ -19,17 +19,17 @@ const getCalc = (randomNumber1, randomNumber2, operator) => {
 
 const signs = ['+', '-', '*'];
 
-const game = () => {
+const generateRound = () => {
   const operator = signs[Math.floor(Math.random() * signs.length)];
-  const randomNumber1 = randomNum();
-  const randomNumber2 = randomNum();
+  const randomNumber1 = getRandomNumber();
+  const randomNumber2 = getRandomNumber();
 
   const question = `${randomNumber1} ${operator} ${randomNumber2}`;
-  const result = getCalc(randomNumber1, randomNumber2, operator);
+  const answer = getCalc(randomNumber1, randomNumber2, operator);
 
-  return { result, question, description };
+  return { answer, question, description };
 };
 
-const calcGame = () => engine(game);
+const runCalcGame = () => engine(generateRound);
 
-export default calcGame;
+export default runCalcGame;

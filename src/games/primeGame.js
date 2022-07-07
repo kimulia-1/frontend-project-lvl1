@@ -1,4 +1,4 @@
-import randomNum from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 import engine from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -14,16 +14,16 @@ const isPrime = (num) => {
   }
   return true;
 };
-const getResult = (num) => (isPrime(num) ? 'yes' : 'no');
+const getAdaptedAnswer = (num) => (isPrime(num) ? 'yes' : 'no');
 
-const game = () => {
-  const randomNum1 = randomNum();
+const generateRound = () => {
+  const randomNum1 = getRandomNumber();
   const question = `${randomNum1}`;
 
-  const result = getResult(randomNum1);
-  return { result, question, description };
+  const answer = getAdaptedAnswer(randomNum1);
+  return { answer, question, description };
 };
 
-const primeGame = () => engine(game);
+const runPrimeGame = () => engine(generateRound);
 
-export default primeGame;
+export default runPrimeGame;
