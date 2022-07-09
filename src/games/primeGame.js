@@ -14,13 +14,12 @@ const isPrime = (num) => {
   }
   return true;
 };
-const getAdaptedAnswer = (num) => (isPrime(num) ? 'yes' : 'no');
 
 const generateRound = () => {
   const randomNum1 = getRandomNumber();
   const question = `${randomNum1}`;
 
-  const answer = getAdaptedAnswer(randomNum1);
+  const answer = isPrime(randomNum1) ? 'yes' : 'no';
   return { answer, question, description };
 };
 
